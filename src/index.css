@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vintage-dark: #5F6F52;
+  --color-vintage-light: #A9B388;
+  --color-vintage-cream: #FEFAE0;
+  --color-vintage-brown: #B99470;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--color-vintage-cream);
+  color: #2D3A26;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
