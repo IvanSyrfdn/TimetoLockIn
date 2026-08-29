@@ -16,7 +16,7 @@
 
 ## 📖 Tentang Proyek
 
-**FocusFlow** adalah aplikasi web produktivitas modern yang menggabungkan manajemen tugas (*task tracker*) dengan teknik **Pomodoro** dan jam *real-time*. Dirancang dengan nuansa desain **Spring Vintage** yang hangat dan estetis namun tetap mempertahankan fungsionalitas komponen modern ala Shadcn UI.
+**Time to Lock in ** adalah aplikasi web produktivitas modern yang menggabungkan manajemen tugas (*task tracker*) dengan teknik **Pomodoro** dan jam *real-time*. Dirancang dengan nuansa desain **Spring Vintage** yang hangat dan estetis namun tetap mempertahankan fungsionalitas komponen modern ala Shadcn UI.
 
 Seluruh data tugas terhubung langsung secara persisten ke database **MongoDB** dengan dukungan penuh operasi **CRUD** (*Create, Read, Update, Delete*).
 
@@ -77,3 +77,43 @@ TimetoLockin/
 ├── package.json
 ├── README.md
 └── vite.config.js
+```
+---
+
+## Instalasi Dependensi
+A. Frontend Dependencies (Root Folder)
+- npm install
+B. Backend Dependencies (Folder Server)
+Masuk ke folder server lalu pasang dependensi backend:
+- npm install
+C. Konfigurasi Environment Variable (.env)
+Di dalam folder server/, buat file baru bernama .env:
+
+Cuplikan kode
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/TimetoLockin
+```
+Catatan: Ganti nilai MONGO_URI dengan connection string MongoDB Atlas kamu jika menggunakan database cloud.
+
+D. Menjalankan Database MongoDB (Lokal)
+Pastikan MongoDB service sudah aktif di latar belakang:
+
+🚀 Menjalankan Aplikasi
+Kamu bisa menjalankan backend dan frontend melalui dua terminal terpisah:
+
+Terminal 1 — Menjalankan Backend Server
+```Bash
+cd server
+npm run dev
+```
+Backend akan berjalan di: http://localhost:5000
+
+Terminal 2 — Menjalankan Frontend React
+Buka terminal/tab baru di root direktori proyek (TimetoLockin):
+```Bash
+npm run dev
+```
+Frontend akan berjalan di: http://localhost:5173
+
+Buka browser http://localhost:5173 untuk mulai menggunakan aplikasi!
