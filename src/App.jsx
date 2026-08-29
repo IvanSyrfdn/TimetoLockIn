@@ -123,10 +123,10 @@ export default function App() {
               <span className="p-2 bg-vintage-dark text-vintage-cream rounded-xl shadow-sm">
                 <Sparkles className="w-5 h-5" />
               </span>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-vintage-dark">FocusFlow</h1>
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-vintage-dark">Time to Lock In</h1>
             </div>
             <p className="text-xs sm:text-sm text-vintage-brown font-medium mt-1">
-              Spring Vintage Task & Pomodoro Tracker
+               Task & Pomodoro Tracker
             </p>
           </div>
           <HeaderClock />

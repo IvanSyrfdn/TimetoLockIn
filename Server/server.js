@@ -46,7 +46,7 @@ app.put('/api/tasks/:id', async (req, res) => {
     const updatedTask = await Task.findByIdAndUpdate(
       req.params.id,
       req.body,
-      { new: true }
+      { returnDocument: 'after' }
     );
     if (!updatedTask) return res.status(404).json({ message: 'Task tidak ditemukan' });
     res.json(updatedTask);

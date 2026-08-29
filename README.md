@@ -102,19 +102,17 @@ Pastikan MongoDB service sudah aktif di latar belakang:
 Kamu bisa menjalankan backend dan frontend melalui dua terminal terpisah:
 
 Terminal 1 — Menjalankan Backend Server
-```
-Bash
+```Bash
 cd server
 npm run dev
-```
+
 Backend akan berjalan di: http://localhost:5000
 
 Terminal 2 — Menjalankan Frontend React
 Buka terminal/tab baru di root direktori proyek (TimetoLockin):
-```
-Bash
+```Bash
 npm run dev
 Frontend akan berjalan di: http://localhost:5173
-``` 
+
 
 Buka browser kamu dan akses http://localhost:5173 untuk mulai menggunakan aplikasi!
