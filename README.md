@@ -77,3 +77,44 @@ TimetoLockin/
 ├── package.json
 ├── README.md
 └── vite.config.js
+
+```
+
+Panduan Instalasi & Setup
+## Instalasi Dependensi
+A. Frontend Dependencies (Root Folder)
+- npm install
+B. Backend Dependencies (Folder Server)
+Masuk ke folder server lalu pasang dependensi backend:
+- npm install
+C. Konfigurasi Environment Variable (.env)
+Di dalam folder server/, buat file baru bernama .env:
+
+Cuplikan kode
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/focusflow_db
+Catatan: Ganti nilai MONGO_URI dengan connection string MongoDB Atlas kamu jika menggunakan database cloud.
+
+D. Menjalankan Database MongoDB (Lokal)
+Pastikan MongoDB service sudah aktif di latar belakang:
+
+🚀 Menjalankan Aplikasi
+Kamu bisa menjalankan backend dan frontend melalui dua terminal terpisah:
+
+Terminal 1 — Menjalankan Backend Server
+```
+Bash
+cd server
+npm run dev
+```
+Backend akan berjalan di: http://localhost:5000
+
+Terminal 2 — Menjalankan Frontend React
+Buka terminal/tab baru di root direktori proyek (TimetoLockin):
+```
+Bash
+npm run dev
+Frontend akan berjalan di: http://localhost:5173
+``` 
+
+Buka browser kamu dan akses http://localhost:5173 untuk mulai menggunakan aplikasi!
