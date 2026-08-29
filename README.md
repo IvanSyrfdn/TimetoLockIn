@@ -16,7 +16,7 @@
 
 ## 📖 Tentang Proyek
 
-**FocusFlow** adalah aplikasi web produktivitas modern yang menggabungkan manajemen tugas (*task tracker*) dengan teknik **Pomodoro** dan jam *real-time*. Dirancang dengan nuansa desain **Spring Vintage** yang hangat dan estetis namun tetap mempertahankan fungsionalitas komponen modern ala Shadcn UI.
+**Time to Lock in ** adalah aplikasi web produktivitas modern yang menggabungkan manajemen tugas (*task tracker*) dengan teknik **Pomodoro** dan jam *real-time*. Dirancang dengan nuansa desain **Spring Vintage** yang hangat dan estetis namun tetap mempertahankan fungsionalitas komponen modern ala Shadcn UI.
 
 Seluruh data tugas terhubung langsung secara persisten ke database **MongoDB** dengan dukungan penuh operasi **CRUD** (*Create, Read, Update, Delete*).
 
@@ -77,10 +77,16 @@ TimetoLockin/
 ├── package.json
 ├── README.md
 └── vite.config.js
+<<<<<<< HEAD
 
 ```
 
 Panduan Instalasi & Setup
+=======
+```
+---
+
+>>>>>>> a245fd766174a160fe55baa342e03686680865ed
 ## Instalasi Dependensi
 A. Frontend Dependencies (Root Folder)
 - npm install
@@ -91,8 +97,15 @@ C. Konfigurasi Environment Variable (.env)
 Di dalam folder server/, buat file baru bernama .env:
 
 Cuplikan kode
+<<<<<<< HEAD
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/focusflow_db
+=======
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/TimetoLockin
+```
+>>>>>>> a245fd766174a160fe55baa342e03686680865ed
 Catatan: Ganti nilai MONGO_URI dengan connection string MongoDB Atlas kamu jika menggunakan database cloud.
 
 D. Menjalankan Database MongoDB (Lokal)
@@ -105,14 +118,25 @@ Terminal 1 — Menjalankan Backend Server
 ```Bash
 cd server
 npm run dev
+<<<<<<< HEAD
 
+=======
+```
+>>>>>>> a245fd766174a160fe55baa342e03686680865ed
 Backend akan berjalan di: http://localhost:5000
 
 Terminal 2 — Menjalankan Frontend React
 Buka terminal/tab baru di root direktori proyek (TimetoLockin):
 ```Bash
 npm run dev
+<<<<<<< HEAD
 Frontend akan berjalan di: http://localhost:5173
 
 
 Buka browser kamu dan akses http://localhost:5173 untuk mulai menggunakan aplikasi!
+=======
+```
+Frontend akan berjalan di: http://localhost:5173
+
+Buka browser http://localhost:5173 untuk mulai menggunakan aplikasi!
+>>>>>>> a245fd766174a160fe55baa342e03686680865ed
